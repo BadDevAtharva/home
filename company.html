@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BadDevAthro - Innovative Browser Extensions</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            color: #ff6f61;
+        }
+
+        header nav a {
+            margin-left: 1.5rem;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff6f61;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 700px;
+            text-align: center;
+            padding: 0 1rem;
+            margin-top: 2rem;
+        }
+
+        .cta-section {
+            margin-top: 2rem;
+        }
+
+        .cta-description {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #b0b0b0;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #2d2d4d, #1e1e2f);
+            text-align: center;
+            animation: fadeIn 1.3s;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0 2rem;
+            max-width: 600px;
+        }
+
+        .cta-button {
+            background: #ff6f61;
+            color: #ffffff;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(255, 111, 97, 0.5);
+        }
+
+        .features, .about-us {
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature, .about {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .feature:hover, .about:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 111, 97, 0.2);
+        }
+
+        .feature h3, .about h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ff6f61;
+        }
+
+        .logo-display {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .logo-display img {
+            width: 100px;
+            margin: 0 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Animation Glow for Links */
+        nav a {
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background: #ff6f61;
+            left: 0;
+            bottom: -3px;
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BadDevAthro</h1>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#about-us">About Us</a>
+            <a href="mailto:atharvapashineofficial@gmail.com"">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-content">
+            <h2>Innovative Browser Extensions</h2>
+            <p>We develop solutions that address your everyday online pain points, making the web a better place for everyone.</p>
+            <div class="cta-section">
+                        <div class="logo-display">
+            <img src="C:\Users\Atharva\Downloads\TH-removebg-preview (3).png" alt="Extension 1 Logo">
+        </div>
+                <button class="cta-button">Try Out Tab Hive</button>
+                <p class="cta-description">Experience seamless tab management with Tab Hive, your productivity booster!</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="features" id="features">
+        <div class="feature">
+            <h3>Customizable</h3>
+            <p>Our extensions are tailored to meet your specific needs and workflows.</p>
+        </div>
+        <div class="feature">
+            <h3>Productivity Boost</h3>
+            <p>Streamline your tasks with intelligent features that save time.</p>
+        </div>
+        <div class="feature">
+            <h3>Seamless Integration</h3>
+            <p>Works flawlessly with popular browsers and platforms.</p>
+        </div>
+    </section>
+
+    <section class="about-us" id="about-us">
+        <div class="about">
+            <h3>About Us</h3>
+            <p>BadDevAthro focuses on developing innovative browser extensions that solve pain points and enhance productivity.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BadDevAthro. All rights reserved.</p>
+    </footer>
+</body>
+</html>
